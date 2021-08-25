@@ -39,23 +39,10 @@ def print_totals_oth(totals_list, gap): # every other
 newlist = [i for i in range(1,10)] # Starting numbers
 print(newlist)
 
-random.shuffle(newlist) # Hidden list, newlist is now shuffled. Once the conditions are satisfied print out newlist
-
-# Conditions: List has starting numbers & we have equivalent sums
-# Uniqueness? Is the map 9-tuple -> 6 sums injective under these restrictions where each value in the tuple is
-# unique and the sums are given as such 111222333,456456456? Observation: Swap two get new sums
-# It is not unique as swapping triples like 222111333 keeps all relations in tact. Or 654654654.
-
-# print(newlist)
+random.shuffle(newlist) # Hidden list, newlist is now shuffled
 
 hidden_sec_totals = sum_frac_list(newlist, 3)
 hidden_oth_totals = sum_every_other(newlist, 3)
-
-# print(sec_totals)
-# print(oth_totals)
-
-# print(hidden_sec_totals)
-# print(hidden_oth_totals)
 
 message = input("Press s for the solution, or any thing else to quit: ")
 if(message == 's'):
