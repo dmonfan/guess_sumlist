@@ -23,18 +23,11 @@ def sum_every_other(sum_list, gap):
 
 def print_totals_sec(totals_list): # section
 	for i in range(0,len(totals_list)):
-		if(i % 10 == 0):
-			print(f"{i+1}st section sum: {totals_list[i]}")
-		elif(i % 10 == 1):
-			print(f"{i+1}nd section sum: {totals_list[i]}")
-		elif(i % 10 == 2):
-			print(f"{i+1}rd section sum: {totals_list[i]}")
-		else:
-			print(f"{i+1}th section sum: {totals_list[i]}")
+		print(f"Sum of row {i} = {totals_list[i]}")
 
 def print_totals_oth(totals_list, gap): # every other
 	for i in range(0, len(totals_list)):
-		print(f"Sum every other {gap} with offset {i}: {totals_list[i]}")
+		print(f"Sum of col {i} = {totals_list[i]}")
 
 newlist = [i for i in range(1,10)] # Starting numbers
 print(newlist)
